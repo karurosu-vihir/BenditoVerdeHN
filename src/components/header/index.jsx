@@ -87,29 +87,34 @@ const Cabecera = styled.header`
             }
         }
     }
-    
-    button{
+    .enivarbtn{ 
+        text-decoration: none;
         display: none;
-        padding: 8px;
-        border-radius: 10px;
         @media (min-width: 720px) {
-            display: flex;
-            flex-flow: nowrap row;
-            align-items: center;
-            gap: 10px;
+            display: block;
         }
-        img{
-            width: 30px;
-            height: 30px;
-        }
-        p{
+        button{
+            padding: 8px;
+            border-radius: 10px;
             @media (min-width: 720px) {
-                display: none;
+                display: flex;
+                flex-flow: nowrap row;
+                align-items: center;
+                gap: 10px;
             }
-            @media (min-width: 1024px) {
-                display: block;  
-                font-size: 25px;
-                font-weight: 500; 
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            p{
+                @media (min-width: 720px) {
+                    display: none;
+                }
+                @media (min-width: 1024px) {
+                    display: block;  
+                    font-size: 25px;
+                    font-weight: 500; 
+                }
             }
         }
     }
@@ -144,7 +149,7 @@ const Header = () => {
             }
         </ul>
     </div>
-    <button><img src="/img/send.svg" alt="Enviar"/><p>Envía</p></button>
+    <Link className="enivarbtn" to={"/contactanos"}><button><img src="/img/send.svg" alt="Enviar"/><p>Envía</p></button></Link>
     </Cabecera>
 }
 
