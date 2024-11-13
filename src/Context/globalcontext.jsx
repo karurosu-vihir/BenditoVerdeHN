@@ -12,6 +12,14 @@ export const ContextProvider = ({ children }) => {
             {label: 'Enviar', url: '/contactanos'},
         ])
 
+        const menuitems = [
+            {titulo: 'Inicio', url: '/', img:''},
+            {titulo: 'Menu', url: '/menu',img:''},
+            {titulo: 'Testimonios', url: '/testimonios',img:''},
+            {titulo: 'Nosotros', url: '/nosotros',img:''},
+            {titulo: 'Enviar', url: '/contactanos',img:''},
+        ]
+
     return (<Context.Provider value={{
         navitems
     }}>
