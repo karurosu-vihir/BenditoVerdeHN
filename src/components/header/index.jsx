@@ -4,6 +4,10 @@ import { Link, useLocation } from "react-router-dom"
 import { Context } from "../../Context/globalcontext"
 
 const Cabecera = styled.header`
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
     background-color: #9aa387;
     display: flex;
     flex-flow: row nowrap;
