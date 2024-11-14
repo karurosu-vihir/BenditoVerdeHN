@@ -13,15 +13,16 @@ export const ContextProvider = ({ children }) => {
         ])
 
         const menuitems = [
-            {titulo: 'Inicio', url: '/', img:''},
-            {titulo: 'Menu', url: '/menu',img:''},
-            {titulo: 'Testimonios', url: '/testimonios',img:''},
-            {titulo: 'Nosotros', url: '/nosotros',img:''},
-            {titulo: 'Enviar', url: '/contactanos',img:''},
+            {titulo: 'Ensaladas', url: '/menu/ensaladas', img:'/img/menu/ensaladas.jpg'},
+            {titulo: 'Jugos cold-pressed', url: '/menu/jugos',img:'/img/menu/bebidas.jpg'},
+            {titulo: 'Superfood Smoothies', url: '/menu/smoothies',img:'/img/menu/smooties.jpg'},
+            {titulo: 'Toasts', url: '/menu/tostadas',img:'/img/menu/tostadas.jpg'},
+            {titulo: 'Algo Ligero', url: '/menu/ligero',img:'/img/menu/yogurt.jpg'},
+            {titulo: 'Más', url: '/menu/mas',img:'/img/menu/wrap.jpg'},
         ]
 
     return (<Context.Provider value={{
-        navitems
+        navitems, menuitems
     }}>
         {children}
     </Context.Provider>
