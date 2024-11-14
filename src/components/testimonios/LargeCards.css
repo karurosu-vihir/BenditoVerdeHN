@@ -1,0 +1,28 @@
+ .CardContainer{
+    justify-content: center;
+ }
+
+
+.CardContainer .LargeCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.CardContainer .LargeCard .CardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardContainer .LargeCard .CardContent h2{
+
+    margin-top: 20px;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.bgGreen{
+    background-color: #9aa387bb;
+}
