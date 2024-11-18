@@ -8,6 +8,8 @@ const Pie = styled.footer`
     display: flex;
     flex-flow: nowrap column;
     padding: 20px;
+    position: relative;
+    z-index: 1000;
     section{
         display: flex;
         flex-flow: nowrap column;
