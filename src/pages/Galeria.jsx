@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Context } from "../Context/globalcontext";
 import { useContext, useState, useEffect } from "react";
 import BtnFlitro from "../components/galeria/BtnFiltro";
-import ImgCard from "../components/galeria/ImgCard";
+import Columns from "../components/galeria/Columns";
 
 const Galery = styled.section`
     background: url('./img/fondo.jpg');
@@ -10,10 +10,15 @@ const Galery = styled.section`
     background-attachment: fixed;
     background-size: cover;
     background-position: center; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    gap: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 10px;
+    @media (min-width: 720px) {
+        gap: 0;
+    }
 `
 
 const Filtros = styled.div`
@@ -40,8 +45,33 @@ const Galeria = () => {
 
     const [filtros, setfiltros] = useState('Comidas')
     const [imagenes, setimagenes] = useState([])
+    const [colnum, setcolnum] = useState(4)
+
+    const columns = [[], [], [], []];
+
+    imagenes.forEach((image, index) => {
+        columns[index % colnum].push(image);
+    });
 
     const { filters, GaleriaImagenes } = useContext(Context)
+
+    useEffect(() => {
+        const min = window.matchMedia("(min-width: 720px)");
+        const max = window.matchMedia("(max-width: 1023px)");
+
+        const mediachange = () => {
+            if (min.matches && max.matches) {
+                setcolnum(2);
+            } else {
+                setcolnum(4);
+            }
+        };
+        mediachange();
+        window.addEventListener("resize", mediachange);
+        return () => {
+            window.removeEventListener("resize", mediachange);
+        };
+    }, []);
 
     useEffect(() => {
         if (filtros === 'Comidas') {
@@ -52,12 +82,11 @@ const Galeria = () => {
             setimagenes(GaleriaImagenes.Lugares);
         }
     }, [filtros]);
-
     return<>
         <Galery>
             {
-                imagenes.map((imagen)=>{
-                    return <ImgCard img={imagen.img}/>
+                columns.map((column)=>{
+                    return <Columns imagenes={column}/>
                 })
             }
         </Galery>

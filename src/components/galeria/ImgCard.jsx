@@ -1,12 +1,9 @@
 import styled from "styled-components"
 
 const IMG = styled.img`
-    width: 300px;
-    max-width: 300px;
-    height: 400px;
-    max-height: 70vh;
-    aspect-ratio: 4/3;
+    width: 100%;
     object-fit: cover;
+    object-position: center;
 `
 
 const ImgCard = ({img}) => {
