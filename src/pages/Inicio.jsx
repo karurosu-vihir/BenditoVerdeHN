@@ -1,9 +1,9 @@
-
-
+import Hero from "../components/landingPage/HeroLanding"
 const Inicio = () => {
-    return<>
-
+    return <>
+        <Hero></Hero>
     </>
+
 }
 
-export default Inicio
+export default Inicio;

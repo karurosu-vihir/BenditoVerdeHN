@@ -13,7 +13,8 @@ const Cabecera = styled.header`
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;  
+    z-index: 1000;  
     .logo{
         display: flex;
         flex-flow: nowrap row;
@@ -131,29 +132,29 @@ const Header = () => {
 
     return <Cabecera>
         <div className="logo">
-            <img src="/img/logo.svg" alt="logo" className="logo_circular"/>
-            <img src="/img/titulo-big.svg" alt="Bendito Verde" className="logo_titulo"/>
+            <img src="/img/logo.svg" alt="logo" className="logo_circular" />
+            <img src="/img/titulo-big.svg" alt="Bendito Verde" className="logo_titulo" />
         </div>
         <div className="content">
-            <label htmlFor="hamburger"><img src="/img/menu_hamburguesa.png" alt="hamburguesa"/></label>
-            <input type="checkbox" id="hamburger"/>
-        <ul>
-            {
-                navitems.map((item,index)=>{
-                    if(( "/" + location.pathname.split("/")[1]) === item.url){
-                        return <>
-                            <li><Link key={index} to={`${item.url}`} className="active">{item.label}</Link> </li>
-                        </>
-                    }else{
-                        return <>
-                            <li><Link key={index} to={`${item.url}`} className="">{item.label}</Link></li>
-                        </>
-                    }
-                })   
-            }
-        </ul>
-    </div>
-    <Link className="enivarbtn" to={"/contactanos"}><button><img src="/img/send.svg" alt="Enviar"/><p>Envía</p></button></Link>
+            <label htmlFor="hamburger"><img src="/img/menu_hamburguesa.png" alt="hamburguesa" /></label>
+            <input type="checkbox" id="hamburger" />
+            <ul>
+                {
+                    navitems.map((item, index) => {
+                        if (("/" + location.pathname.split("/")[1]) === item.url) {
+                            return <>
+                                <li><Link key={index} to={`${item.url}`} className="active">{item.label}</Link> </li>
+                            </>
+                        } else {
+                            return <>
+                                <li><Link key={index} to={`${item.url}`} className="">{item.label}</Link></li>
+                            </>
+                        }
+                    })
+                }
+            </ul>
+        </div>
+        <Link className="enivarbtn" to={"/contactanos"}><button><img src="/img/send.svg" alt="Enviar" /><p>Envía</p></button></Link>
     </Cabecera>
 }
 
