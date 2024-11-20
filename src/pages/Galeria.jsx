@@ -14,7 +14,7 @@ const Galery = styled.section`
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     gap: 10px;
     @media (min-width: 720px) {
         gap: 0;
