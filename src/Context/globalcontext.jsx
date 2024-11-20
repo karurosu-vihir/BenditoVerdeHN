@@ -54,8 +54,203 @@ export const ContextProvider = ({ children }) => {
         ]
     }
 
+    const menuproductos = [{
+        de:"jugos",
+        titulo: "/img/productos/titulos/juices.svg",
+        items: [
+            {
+                "nombre": "BENDITO VERDE",
+                "precio": "L 130.00",
+                "descripcion": "Manzana verde, espinaca, apio, pepino, jengibre & limón. Alcalinizador, oxigenante, depurativo y detoxificador.",
+                "img":"/img/menu/bebidas.jpg"
+            },
+            {
+                "nombre": "CIELITO LINDO",
+                "precio": "L 130.00",
+                "descripcion": "Zanahoria, manzana verde, jengibre & limón. Rejuvenece la piel, mejora la visión, descongestionante.",
+                "img":"/img/menu/bebidas.jpg"
+            },
+            {
+                "nombre": "AM",
+                "precio": "L 130.00",
+                "descripcion": "Piña, jengibre, apio, pepino & limón. Diurético natural, hidratante, protector y energético.",
+                "img":"/img/menu/bebidas.jpg"
+            },
+            {
+                "nombre": "RAMBO JUNGLE",
+                "precio": "L 130.00",
+                "descripcion": "Espinaca, piña, apio, manzana verde, jengibre & limón. Inmunizador energético.",
+                "img":"/img/menu/bebidas.jpg"
+            },
+            {
+                "nombre": "UNBEETABLE",
+                "precio": "L 130.00",
+                "descripcion": "Zanahoria, manzana verde, remolacha, pepino, jengibre & limón. Poder antioxidante, alcalinizador, regenerador y desintoxicante.",
+                "img":"/img/menu/bebidas.jpg"
+            },
+        ]
+        },
+        {
+            de:"smoothies",
+            titulo: "/img/productos/titulos/smoothies.svg",
+            items: [
+                {
+                    "nombre": "BERRY HAPPY",
+                    "precio": "L 175.00",
+                    "descripcion": "Leche de coco, proteína sabor vainilla, fresas, arándanos y miel de abeja.",
+                    "img":"/img/menu/smooties.jpg"
+                },
+                {
+                    "nombre": "VOLCANIC GLOW",
+                    "precio": "L 170.00",
+                    "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla, arándanos, banano, espinaca y crema de cacahuate.",
+                    "img":"/img/menu/smooties.jpg"
+                },
+                {
+                    "nombre": "BANANA SPLIT",
+                    "precio": "L 170.00",
+                    "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla o chocolate, banano, crema de cacahuate, bendito verde, dátil y canela.",
+                    "img":"/img/menu/smooties.jpg"
+                },
+                {
+                    "nombre": "PIÑA COLADA",
+                    "precio": "L 160.00",
+                    "descripcion": "Leche de coco, piña, proteína sabor vainilla y coco rallado.",
+                    "img":"/img/menu/smooties.jpg"
+                }
+            ]
+        },
+        {
+            de:"tostadas",
+            titulo: "/img/productos/titulos/toasts.svg",
+            items: [
+                {
+                    "nombre": "SWEET N’ TOAST",
+                    "precio": "L 120.00",
+                    "descripcion": "Pan 100% integral con crema de cacahuate bendito verde, banano, arándanos y granola.",
+                    "img":"/img/menu/tostadas.jpg"
+                },
+                {
+                    "nombre": "AVO",
+                    "precio": "L 135.00",
+                    "descripcion": "Pan de masa madre, huevo y aguacate cremoso cubierto en microgreens.",
+                    "img":"/img/menu/tostadas.jpg"
+                },
+                {
+                    "nombre": "HUMMUS",
+                    "precio": "PRONTO",
+                    "descripcion": "Pan de masa madre, hummus, champiñones y tomate cherry rostizado.",
+                    "img":"/img/menu/tostadas.jpg"
+                },
+                {
+                    "nombre": "OH CHERRY",
+                    "precio": "L 155.00",
+                    "descripcion": "Pan de masa madre, aguacate, queso feta, arugula, tomate cherry rostizado y balsámico (opcional: agregar huevo).",
+                    "img":"/img/menu/tostadas.jpg"
+                },
+            ]
+            
+        },
+        {
+            de:"ligero",
+            titulo: "/img/productos/titulos/light.svg",
+            items: [
+                {
+                    "nombre": "OVERNIGHT OATS",
+                    "precio": "L 105.00",
+                    "descripcion": "Avena trasnochada con leche de almendras, yogurt griego, chia y toppings.",
+                    "img":"/img/menu/yogurt.jpg"
+                },
+                {
+                    "nombre": "CHÍA PUDDING",
+                    "precio": "L 95.00",
+                    "descripcion": "Elaborado a base de leche de almendras y semillas de chia acompañado de frutas de temporada y tu topping favorito.",
+                    "img":"/img/menu/yogurt.jpg"
+                },
+                {
+                    "nombre": "MYKONOS YOGURT",
+                    "precio": "L 105.00",
+                    "descripcion": "Yogurt griego con fruta de temporada y granola hecha en casa.",
+                    "img":"/img/menu/yogurt.jpg"
+                },
+                {
+                    "nombre": "AÇAÍ BOWL",
+                    "precio": "L 220.00",
+                    "descripcion": "Base de açaí con granola bendito verde, fresas, banano, coco rallado, cacao nibs y crema de cacahuate bendito verde.",
+                    "img":"/img/menu/yogurt.jpg"
+                }
+            ]
+        },
+        {
+            de:"ensaladas",
+            titulo: "/img/productos/titulos/salads.svg",
+            items: [
+                {
+                    "nombre": "STRAWBERRY CHICKEN SALAD",
+                    "precio": "L 290.00",
+                    "descripcion": "Mix de lechugas y espinaca, pollo a la plancha, fresas, moras, nueces garapiñadas, queso feta y vinagreta balsámica de fresas.",
+                    "img":"/img/menu/ensaladas.jpg"
+                },
+                {
+                    "nombre": "QUINOA MEDITERRANEA (opción vegana)",
+                    "precio": "L 270.00",
+                    "descripcion": "Base de quinoa, pollo a la plancha, chile de color, pepino, tomate cherry, repollo morado y vinagreta de limón.",
+                    "img":"/img/menu/ensaladas.jpg"
+                },
+                {
+                    "nombre": "PASTA CAESAR SALAD (opción vegana)",
+                    "precio": "L 275.00",
+                    "descripcion": "Mix de lechuga con pasta rotinni acompañada de garbanzos crujientes, pollo a la plancha, queso parmesano, tomate cherry y aderezo césar.",
+                    "img":"/img/menu/ensaladas.jpg"
+                },
+                {
+                    "nombre": "COBB SALAD",
+                    "precio": "L 285.00",
+                    "descripcion": "Base de lechuga romana, pollo, cebolla roja, tomate cherry, huevo cocido, trocitos de bacon, aguacate y queso cheddar con aderezo aguacate griego.",
+                    "img":"/img/menu/ensaladas.jpg"
+                },
+                {
+                    "nombre": "MEXA",
+                    "precio": "L 275.00",
+                    "descripcion": "Mix de lechugas, pollo, maíz asado, frijoles, aguacate, cebolla roja, cilantro, queso cheddar y chips de quinoa con aderezo de cilantro y limón.",
+                    "img":"/img/menu/ensaladas.jpg"
+                },
+            ]            
+        },
+        {
+            de:"mas",
+            titulo: "/img/productos/titulos/mas.svg",
+            items: [
+                {
+                    "nombre": "VERDEMIO TUNA SANDWICH",
+                    "precio": "L 190.00",
+                    "descripcion": "Pan 100% integral con ensalada de atún.",
+                    "img":"/img/menu/wrap.jpg"
+                },
+                {
+                    "nombre": "WRAP SANO PECADO",
+                    "precio": "L 198.00",
+                    "descripcion": "Envueltos de tortilla de espinaca rellena de pollo a la plancha, lechuga, tomate, cebolla con fundido de queso mozzarella y aderezo skinny spicy mayo.",
+                    "img":"/img/menu/wrap.jpg"
+                },
+                {
+                    "nombre": "WAFFLES PROTEICOS",
+                    "precio": "L 195.00",
+                    "descripcion": "Waffles hechos a base de almendra con proteína acompañados de banano y arándanos o banano y fresas con crema de cacahuate bendito verde.",
+                    "img":"/img/menu/wrap.jpg"
+                },
+                {
+                    "nombre": "PANQUEQUES DE AVENA Y BANANO",
+                    "precio": "L 165.00",
+                    "descripcion": "Panqueques a base de avena y banano acompañados de frutas y miel de abeja.",
+                    "img":"/img/menu/wrap.jpg"
+                }
+            ]
+        }
+    ]
+
     return (<Context.Provider value={{
-        navitems, menuitems, filters, GaleriaImagenes
+        navitems, menuitems, filters, GaleriaImagenes, menuproductos
     }}>
         {children}
     </Context.Provider>
