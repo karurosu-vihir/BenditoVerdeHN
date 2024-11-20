@@ -40,17 +40,23 @@ const Productos = () => {
     const [verdad, setverdad] = useState(false)
 
     useEffect(() => {
-        setverdad(false)
+        let encontrado = false
         menuproductos.map((menuproducto)=>{
             if(categoria === menuproducto.de){
-                setverdad(true)
+                encontrado = true
                 setCategoriaproductos(menuproducto)
             }
         })
-    }, [])
+
+        setverdad(encontrado)
+
+        if (!encontrado) {
+            nav('/v')
+        }
+    }, [categoria, menuproductos, nav])
 
     return <>
-        {!verdad? nav('/v') : <>
+            { verdad &&
             <MainContainer>
                 <h2><img src={Categoriaproductos.titulo} alt={Categoriaproductos.de} /></h2>
                 <CardsMenu>
@@ -61,8 +67,8 @@ const Productos = () => {
                 }
             </CardsMenu>
             </MainContainer>
-        </>}
-    </>
+            }
+        </>
 }
 
 export default Productos
