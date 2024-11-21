@@ -24,6 +24,7 @@ const Content = styled.div`
         font-weight: bolder;
         padding: 0 10px;
         color: #FEFDF2;
+        text-align: center;
     }
     p{
         font-size: 20px;
@@ -39,6 +40,10 @@ const Content = styled.div`
         border: #9ba387;
         font-weight: bold;
         cursor: pointer;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            background-color: #3e4733;
+        }
     }
 `
 
@@ -55,7 +60,7 @@ const Imagen = styled.div`
     }
 `
 
-const Cards = ({items}) => {
+const Cards = ({items, setModalitem, setmodal}) => {
     return<Container>
         <Imagen>
             <img src={items.img} alt={items.nombre} />
@@ -63,7 +68,10 @@ const Cards = ({items}) => {
        <Content>
             <h3>{items.nombre}</h3>
             <p>{items.precio}</p>
-            <button>Ver Más</button>
+            <button onClick={()=>{
+                setModalitem(items);
+                setmodal(true);
+            }}>Ver Más</button>
         </Content> 
     </Container>
 }

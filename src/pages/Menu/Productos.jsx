@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import styled from "styled-components"
 import { Context } from "../../Context/globalcontext"
 import Cards from "../../components/producto/Cards"
+import Modal from "../../components/producto/Modal"
 
 const MainContainer = styled.section`
     width: 90%;
@@ -33,11 +34,13 @@ const CardsMenu = styled.div`
 `
 
 const Productos = () => {
-    const { categoria } = useParams()
-    const { menuproductos } = useContext(Context)
-    const [Categoriaproductos, setCategoriaproductos] = useState({})
-    const nav = useNavigate()
-    const [verdad, setverdad] = useState(false)
+    const { categoria } = useParams() // sacar categoria de la url
+    const { menuproductos } = useContext(Context) // sacar menu del contexto
+    const [Categoriaproductos, setCategoriaproductos] = useState({}) // sacar los productos segun la categoria
+    const nav = useNavigate() //instanciar el useNavigate para navegar
+    const [verdad, setverdad] = useState(false) // Para saber si se muestra o no la pagina
+    const [Modalitems, setModalitems] = useState(null) // Info al modal
+    const [EstadoModal, setEstadoModal] = useState(false)
 
     useEffect(() => {
         let encontrado = false
@@ -54,19 +57,22 @@ const Productos = () => {
             nav('/v')
         }
     }, [categoria, menuproductos, nav])
-
     return <>
-            { verdad &&
-            <MainContainer>
-                <h2><img src={Categoriaproductos.titulo} alt={Categoriaproductos.de} /></h2>
-                <CardsMenu>
-                {
-                    Categoriaproductos.items.map((item, index)=>{
-                        return <Cards key={index} items={item}/>
-                    })
+            { verdad && <>
+                <MainContainer>
+                    <h2><img src={Categoriaproductos.titulo} alt={Categoriaproductos.de} /></h2>
+                    <CardsMenu>
+                    {
+                        Categoriaproductos.items.map((item, index)=>{
+                            return <Cards key={index} items={item} setModalitem={setModalitems} setmodal={setEstadoModal}/>
+                        })
+                    }
+                </CardsMenu>
+                </MainContainer>
+                { EstadoModal &&
+                <Modal items={Modalitems} setmodal={setEstadoModal}/>
                 }
-            </CardsMenu>
-            </MainContainer>
+            </>
             }
         </>
 }
