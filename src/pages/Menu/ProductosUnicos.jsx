@@ -1,5 +1,12 @@
+import Hero from "../../components/Heroproductosnuestros.jsx/index";
+import ProductGranola from "../../components/ProductGranola/index";
+
 const ProductosUnicos = () => {
-    return<>
+    return <>
+        <div>
+            <Hero />
+            <ProductGranola />
+        </div>
 
     </>
 }
