@@ -1,4 +1,4 @@
-import './Style.css'
+import './Hero.css'
 
 const HeroUbicacion = () => {
   return (
