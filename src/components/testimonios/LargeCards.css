@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 250px;
+    justify-content: center;
 }
 
 .CardContainer .LargeCard .CardContent h2{
@@ -19,10 +21,17 @@
     margin-top: 20px;
 }
 
+
+.CardContainer .LargeCard .CardContent p{
+
+    margin-top: 5px;
+    padding: 20px;
+}
+
 .bgWhite {
     background-color: white;
 }
 
 .bgGreen{
-    background-color: #9aa387bb;
+    background-color: #9aa3878c;
 }
