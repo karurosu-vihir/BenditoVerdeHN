@@ -7,6 +7,7 @@ const ContainerCards = styled.section`
     margin: 50px auto 50px auto;
     padding-bottom: 100px;
     position: relative;
+    z-index: 18;
     h3{
         font-size: 1.3rem;
         font-weight: 600;
@@ -43,9 +44,8 @@ const ContainerCards = styled.section`
                 display: block;
                 padding: 2px 8px;
                 margin-bottom: 30px; 
-                border: 1px solid #000;
                 text-decoration: none;
-                color: #000;
+                color: #9AA387;
             }
         }
     }
@@ -65,20 +65,31 @@ const ContainerCards = styled.section`
     }  
 `;
 const CardsLanding = () => {
+    const cards = [
+        {
+            name: 'Wrap Sano Pecado',
+            imgURL: 'img/menu/wrap2.jpg',
+            link: '/menu'
+        },
+        {
+            name: 'Sweet N`Toast',
+            imgURL: 'img/menu/tostadas.jpg',
+            link: '/menu'
+        },
+    ];
     return <>
         <ContainerCards>
             <h3>Platillos Populares</h3>
             <div className="cards">
-                <div className="card">
-                    <img src="img/menu/tostadas.jpg" alt="Imagen platillo" />
-                    <p>Wrap Sano Pecado</p>
-                    <a href="/">Ver detalle</a>
-                </div>
-                <div className="card">
-                    <img src="img/menu/tostadas.jpg" alt="Imagen platillo" />
-                    <p>Wrap Sano Pecado</p>
-                    <a href="/">Ver detalle</a>
-                </div>
+                {
+                    cards.map((elemento, index) => {
+                        return <div key={index} className="card">
+                            <img src={elemento.imgURL} alt={elemento.name} />
+                            <p>{elemento.name}</p>
+                            <a href={elemento.link}>Ver detalle</a>
+                        </div>
+                    })
+                }
             </div>
             <Link className="btnMenu" to={'/menu'}>Ver menú completo</Link>
         </ContainerCards>

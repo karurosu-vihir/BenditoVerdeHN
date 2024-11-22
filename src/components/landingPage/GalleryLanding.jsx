@@ -7,7 +7,7 @@ const ContainerGallery = styled.section`
     margin: 30px auto 50px auto;
     padding-bottom: 100px;
     position: relative;
-
+    z-index: 16;
     h3{
         font-size: 1.3rem;
         font-weight: 600;
@@ -29,7 +29,7 @@ const ContainerGallery = styled.section`
     }
     .btnGaleria{
         width: 210px;
-        padding: 14px;
+        padding: 12px;
         display: block;
         text-align: center;
         background-color: #9aa387;
@@ -37,22 +37,53 @@ const ContainerGallery = styled.section`
         text-decoration: none;
         border-radius: 20px;
         position: absolute;
-        top: 96%;
+        top: 97%;
         left: 50%;
         transform: translate(-50%, -50%);
     }  
+    @media (min-width: 1024px){
+        .btnGaleria{
+            top: 92%;
+        }
+    }
 `;
+
 const GalleryLanding = () => {
+    const galleryImages = [
+        {
+            imgURL: 'img/menu/bebidas.jpg',
+            imgALT: 'Imagen de bebida'
+        },
+        {
+            imgURL: 'img/menu/ensaladas.jpg',
+            imgALT: 'Imagen de ensaladas'
+        },
+        {
+            imgURL: 'img/menu/smooties.jpg',
+            imgALT: 'Imagen de smothies'
+        },
+        {
+            imgURL: 'img/menu/yogurt.jpg',
+            imgALT: 'Imagen de Yogurt'
+        },
+        {
+            imgURL: 'img/menu/waffles.jpg',
+            imgALT: 'Imagen de waffles'
+        },
+        {
+            imgURL: 'img/menu/wrap.jpg',
+            imgALT: 'Imagen de wrap'
+        },
+    ];
     return <>
         <ContainerGallery>
             <h3>Visita Nuestra Galería</h3>
             <div className="grid">
-                <img src="/public/img/menu/bebidas.jpg" alt="Imagen de galeria" />
-                <img src="/public/img/menu/ensaladas.jpg" alt="Imagen de galeria" />
-                <img src="/public/img/menu/smooties.jpg" alt="Imagen de galeria" />
-                <img src="/public/img/menu/yogurt.jpg" alt="Imagen de galeria" />
-                <img src="/public/img/menu/waffles.jpg" alt="Imagen de galeria" />
-                <img src="/public/img/menu/wrap.jpg" alt="Imagen de galeria" />
+                {
+                    galleryImages.map((elemento, indice) => {
+                        return <img src={elemento.imgURL} alt={elemento.imgALT} key={indice} />
+                    })
+                }
             </div>
             <Link className="btnGaleria" to={'/galeria'}>Explorar más</Link>
         </ContainerGallery>

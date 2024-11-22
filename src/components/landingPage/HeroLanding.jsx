@@ -5,11 +5,13 @@ const Hero = styled.section`
     display; grid;
     width: 100%;
     height: 90vh;
-    z-index: 1;
+    z-index: 15;
     .container-images{
+        position: relative;
+        z-index: 14;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 280px 280px;
+        grid-template-rows: 42vh 42vh;
         img{
             width: 100%;
             height: 100%;
@@ -24,7 +26,7 @@ const Hero = styled.section`
     };
     .heroInfo{
         position: absolute;
-        z-index: 3;
+        z-index: 30;
         top: 54%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -69,9 +71,9 @@ const Hero = styled.section`
     .modal{
         position: absolute;
         width: 100%;
-        height: 95vh;
+        height: 99vh;
         background-color: #000;
-        z-index: 2;
+        z-index: 20;
         top: 0;
         opacity: 0.6;
     }
@@ -174,7 +176,7 @@ const HeroLanding = () => {
             <div className="container-images">
                 <img src="/img/menu/ensaladas2.jpg" alt="Imagen de plato" />
                 <img src="/img/menu/tostadas.jpg" alt="Imagen de plato" />
-                <img src="/img/menu/waffles.jpg" srcSet="/img/menu/bebidas.jpg" alt="Imagen de plato" className="desktopImg" />
+                <img src="/img/menu/waffles.jpg" alt="Imagen de plato" className="desktopImg" />
                 <img src="/img/menu/wrap2.jpg" alt="Imagen de plato" />
             </div>
             <div className="heroInfo">
