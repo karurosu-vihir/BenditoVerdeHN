@@ -14,7 +14,7 @@ export const ContextProvider = ({ children }) => {
 
     const menuitems = [
         { titulo: 'Ensaladas', url: '/menu/ensaladas', img: '/img/menu/ensaladas.jpg' },
-        { titulo: 'Jugos cold-pressed', url: '/menu/jugos', img: '/img/menu/bebidas.jpg' },
+        { titulo: 'Jugos cold-pressed', url: '/menu/jugos', img: '/img/menu/jugos.jpg' },
         { titulo: 'Superfood Smoothies', url: '/menu/smoothies', img: '/img/menu/smooties.jpg' },
         { titulo: 'Toasts', url: '/menu/tostadas', img: '/img/menu/tostadas.jpg' },
         { titulo: 'Algo Ligero', url: '/menu/ligero', img: '/img/menu/yogurt.jpg' },
@@ -26,7 +26,7 @@ export const ContextProvider = ({ children }) => {
     const GaleriaImagenes =
     {
         Comidas: [
-            { img: '/img/menu/ensaladas.jpg' },
+            { img: '/img/productos/ohcherry.jpg' },
             { img: '/img/menu/ensaladas.jpg' },
             { img: '/img/menu/ensaladas.jpg' },
             { img: '/img/menu/ensaladas.jpg' },
@@ -62,31 +62,31 @@ export const ContextProvider = ({ children }) => {
                 "nombre": "BENDITO VERDE",
                 "precio": "L 130.00",
                 "descripcion": "Manzana verde, espinaca, apio, pepino, jengibre & limón. Alcalinizador, oxigenante, depurativo y detoxificador.",
-                "img":"/img/menu/bebidas.jpg"
+                "img":"https://placehold.co/600x400"
             },
             {
                 "nombre": "CIELITO LINDO",
                 "precio": "L 130.00",
                 "descripcion": "Zanahoria, manzana verde, jengibre & limón. Rejuvenece la piel, mejora la visión, descongestionante.",
-                "img":"/img/menu/bebidas.jpg"
+                "img":"/img/productos/lindo.JPG"
             },
             {
                 "nombre": "AM",
                 "precio": "L 130.00",
                 "descripcion": "Piña, jengibre, apio, pepino & limón. Diurético natural, hidratante, protector y energético.",
-                "img":"/img/menu/bebidas.jpg"
+                "img":"https://placehold.co/600x400"
             },
             {
                 "nombre": "RAMBO JUNGLE",
                 "precio": "L 130.00",
                 "descripcion": "Espinaca, piña, apio, manzana verde, jengibre & limón. Inmunizador energético.",
-                "img":"/img/menu/bebidas.jpg"
+                "img":"/img/productos/rambo.JPG"
             },
             {
                 "nombre": "UNBEETABLE",
                 "precio": "L 130.00",
                 "descripcion": "Zanahoria, manzana verde, remolacha, pepino, jengibre & limón. Poder antioxidante, alcalinizador, regenerador y desintoxicante.",
-                "img":"/img/menu/bebidas.jpg"
+                "img":"/img/productos/UNBEETABLE.JPG"
             },
         ]
         },
@@ -98,25 +98,25 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "BERRY HAPPY",
                     "precio": "L 175.00",
                     "descripcion": "Leche de coco, proteína sabor vainilla, fresas, arándanos y miel de abeja.",
-                    "img":"/img/menu/smooties.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "VOLCANIC GLOW",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla, arándanos, banano, espinaca y crema de cacahuate.",
-                    "img":"/img/menu/smooties.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "BANANA SPLIT",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla o chocolate, banano, crema de cacahuate, bendito verde, dátil y canela.",
-                    "img":"/img/menu/smooties.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "PIÑA COLADA",
                     "precio": "L 160.00",
                     "descripcion": "Leche de coco, piña, proteína sabor vainilla y coco rallado.",
-                    "img":"/img/menu/smooties.jpg"
+                    "img":"https://placehold.co/600x400"
                 }
             ]
         },
@@ -128,7 +128,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "SWEET N’ TOAST",
                     "precio": "L 120.00",
                     "descripcion": "Pan 100% integral con crema de cacahuate bendito verde, banano, arándanos y granola.",
-                    "img":"/img/menu/tostadas.jpg"
+                    "img":"/img/productos/sweettoast.jpg"
                 },
                 {
                     "nombre": "AVO",
@@ -140,13 +140,13 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "HUMMUS",
                     "precio": "PRONTO",
                     "descripcion": "Pan de masa madre, hummus, champiñones y tomate cherry rostizado.",
-                    "img":"/img/menu/tostadas.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "OH CHERRY",
                     "precio": "L 155.00",
                     "descripcion": "Pan de masa madre, aguacate, queso feta, arugula, tomate cherry rostizado y balsámico (opcional: agregar huevo).",
-                    "img":"/img/menu/tostadas.jpg"
+                    "img":"/img/productos/ocherry.jpg"
                 },
             ]
             
@@ -159,13 +159,13 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "OVERNIGHT OATS",
                     "precio": "L 105.00",
                     "descripcion": "Avena trasnochada con leche de almendras, yogurt griego, chia y toppings.",
-                    "img":"/img/menu/yogurt.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "CHÍA PUDDING",
                     "precio": "L 95.00",
                     "descripcion": "Elaborado a base de leche de almendras y semillas de chia acompañado de frutas de temporada y tu topping favorito.",
-                    "img":"/img/menu/yogurt.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "MYKONOS YOGURT",
@@ -177,7 +177,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "AÇAÍ BOWL",
                     "precio": "L 220.00",
                     "descripcion": "Base de açaí con granola bendito verde, fresas, banano, coco rallado, cacao nibs y crema de cacahuate bendito verde.",
-                    "img":"/img/menu/yogurt.jpg"
+                    "img":"/img/productos/acai.jpg"
                 }
             ]
         },
@@ -189,31 +189,31 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "STRAWBERRY CHICKEN SALAD",
                     "precio": "L 290.00",
                     "descripcion": "Mix de lechugas y espinaca, pollo a la plancha, fresas, moras, nueces garapiñadas, queso feta y vinagreta balsámica de fresas.",
-                    "img":"/img/menu/ensaladas.jpg"
+                    "img":"/img/productos/strawberrychksalad.jpg"
                 },
                 {
                     "nombre": "QUINOA MEDITERRANEA (opción vegana)",
                     "precio": "L 270.00",
                     "descripcion": "Base de quinoa, pollo a la plancha, chile de color, pepino, tomate cherry, repollo morado y vinagreta de limón.",
-                    "img":"/img/menu/ensaladas.jpg"
+                    "img":"/img/productos/quinoa.jpg"
                 },
                 {
                     "nombre": "PASTA CAESAR SALAD (opción vegana)",
                     "precio": "L 275.00",
                     "descripcion": "Mix de lechuga con pasta rotinni acompañada de garbanzos crujientes, pollo a la plancha, queso parmesano, tomate cherry y aderezo césar.",
-                    "img":"/img/menu/ensaladas.jpg"
+                    "img":"/img/productos/caesar.jpg"
                 },
                 {
                     "nombre": "COBB SALAD",
                     "precio": "L 285.00",
                     "descripcion": "Base de lechuga romana, pollo, cebolla roja, tomate cherry, huevo cocido, trocitos de bacon, aguacate y queso cheddar con aderezo aguacate griego.",
-                    "img":"/img/menu/ensaladas.jpg"
+                    "img":"/img/productos/cobbsalad.jpg"
                 },
                 {
                     "nombre": "MEXA",
                     "precio": "L 275.00",
                     "descripcion": "Mix de lechugas, pollo, maíz asado, frijoles, aguacate, cebolla roja, cilantro, queso cheddar y chips de quinoa con aderezo de cilantro y limón.",
-                    "img":"/img/menu/ensaladas.jpg"
+                    "img":"/img/productos/mexa.jpg"
                 },
             ]            
         },
@@ -225,7 +225,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "VERDEMIO TUNA SANDWICH",
                     "precio": "L 190.00",
                     "descripcion": "Pan 100% integral con ensalada de atún.",
-                    "img":"/img/menu/wrap.jpg"
+                    "img":"/img/productos/tuna.jpg"
                 },
                 {
                     "nombre": "WRAP SANO PECADO",
@@ -237,13 +237,13 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "WAFFLES PROTEICOS",
                     "precio": "L 195.00",
                     "descripcion": "Waffles hechos a base de almendra con proteína acompañados de banano y arándanos o banano y fresas con crema de cacahuate bendito verde.",
-                    "img":"/img/menu/wrap.jpg"
+                    "img":"https://placehold.co/600x400"
                 },
                 {
                     "nombre": "PANQUEQUES DE AVENA Y BANANO",
                     "precio": "L 165.00",
                     "descripcion": "Panqueques a base de avena y banano acompañados de frutas y miel de abeja.",
-                    "img":"/img/menu/wrap.jpg"
+                    "img":"/img/productos/pancakes.jpg"
                 }
             ]
         }

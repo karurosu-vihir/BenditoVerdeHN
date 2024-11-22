@@ -6,7 +6,7 @@ import Cards from "../../components/producto/Cards"
 import Modal from "../../components/producto/Modal"
 
 const MainContainer = styled.section`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0;
     display: flex;
@@ -18,9 +18,15 @@ const MainContainer = styled.section`
         background-color: #FEFDF2;
         padding: 20px 0;
         text-align: center;
-        img{
-            width: 70%;
+        .titulo{
+            width: 90%;
             height: 70px;
+        }
+    }
+    @media (min-width: 720px) {
+        width: 90%;
+        .titulo{
+            width: 70%;
         }
     }
 `
@@ -60,7 +66,7 @@ const Productos = () => {
     return <>
             { verdad && <>
                 <MainContainer>
-                    <h2><img src={Categoriaproductos.titulo} alt={Categoriaproductos.de} /></h2>
+                    <h2><img className="titulo" src={Categoriaproductos.titulo} alt={Categoriaproductos.de} /></h2>
                     <CardsMenu>
                     {
                         Categoriaproductos.items.map((item, index)=>{
