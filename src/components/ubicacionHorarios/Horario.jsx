@@ -1,4 +1,6 @@
 import "./Style.css";
+import { Context } from "../../Context/globalcontext"
+import { Link, useLocation } from "react-router-dom"
 
 const Horario = () => {
   const horarios = [
@@ -28,7 +30,7 @@ const Horario = () => {
         </div>
       </section>
       <div className="btnContainer">
-        <button id="btn">Contáctanos</button>
+      <Link className="btn" to={"/contactanos"}><button>Contáctanos</button></Link>
       </div>
     </>
   );
