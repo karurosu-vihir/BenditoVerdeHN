@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Hero = styled.section`
     display; grid;
     width: 100%;
-    height: 90vh;
+    height: 800px;
     z-index: 15;
     .container-images{
         position: relative;
@@ -116,12 +116,12 @@ const Hero = styled.section`
             }
         }
         .modal{
-            height: 105vh;
+            height: 776px;
         }
     }
     @media(min-width: 1024px){
         .container-images {
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-template-rows: 1fr;
             img{
                 &:nth-child(even), &:nth-child(1){
@@ -165,7 +165,8 @@ const Hero = styled.section`
             }  
         }
         .modal{
-            height: 104vh;
+            overflow: hidden;
+            height: 906px;
         }
     }
 

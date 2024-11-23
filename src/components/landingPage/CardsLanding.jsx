@@ -72,7 +72,7 @@ const CardsLanding = () => {
             link: '/menu'
         },
         {
-            name: 'Sweet N`Toast',
+            name: 'Avo Toast',
             imgURL: 'img/menu/tostadas.jpg',
             link: '/menu'
         },

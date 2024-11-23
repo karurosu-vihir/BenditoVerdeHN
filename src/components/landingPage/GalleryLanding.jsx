@@ -74,6 +74,14 @@ const GalleryLanding = () => {
             imgURL: 'img/menu/wrap.jpg',
             imgALT: 'Imagen de wrap'
         },
+        {
+            imgURL: 'img/menu/ensaladas2.jpg',
+            imgALT: 'Imagen de ensalada'
+        },
+        {
+            imgURL: 'img/menu/tostadas.jpg',
+            imgALT: 'Imagen de tostadas '
+        },
     ];
     return <>
         <ContainerGallery>
