@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import { useState, useEffect } from "react";
 const Hero = styled.section`
     display; grid;
     width: 100%;
-    height: 800px;
+    height: auto;
     z-index: 15;
     .container-images{
         position: relative;
@@ -71,10 +71,10 @@ const Hero = styled.section`
     .modal{
         position: absolute;
         width: 100%;
-        height: 99vh;
+        height: 84vh;
         background-color: #000;
         z-index: 20;
-        top: 0;
+        top: 106px;
         opacity: 0.6;
     }
     @media (min-width: 720px){
@@ -116,14 +116,16 @@ const Hero = styled.section`
             }
         }
         .modal{
-            height: 776px;
+            height: 94vh;
         }
     }
     @media(min-width: 1024px){
+        height: 90vh;
         .container-images {
             grid-template-columns: 100%;
             grid-template-rows: 1fr;
             img{
+                object-position: top center;
                 &:nth-child(even), &:nth-child(1){
                     display: none;
                 }
@@ -133,14 +135,14 @@ const Hero = styled.section`
             position: absolute;
             width: 100%;
             height: 90vh;
-            top: 57%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             h3{
                 position: absolute;
                 font-size: 1.6rem;
                 width: 350px;
-                top: 8%;
+                top: 14%;
                 left: 3%    
             }
             .hero-content{
@@ -150,7 +152,7 @@ const Hero = styled.section`
                 display: block;
                 position: absolute;
                 width: 350px;
-                top: 78%;
+                top: 80%;
                 right: 3%;
                 z-index: 100;
                 font-size: 1.6rem;
@@ -158,27 +160,74 @@ const Hero = styled.section`
                 line-height: 1.7;
             }  
             a{
+                width: 250px;
+                padding: 16px 0px;
                 position: absolute;
+                font-size: 1.7rem;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }  
         }
         .modal{
-            overflow: hidden;
-            height: 906px;
+            height: 90vh;
         }
     }
 
 `;
 const HeroLanding = () => {
+    const [dynamicImages, setDinamicImages] = useState([
+        {
+            imgUrl: '/img/menu/ensaladas2.jpg',
+            imgAlt: 'Imagen de ensalada'
+        },
+        {
+            imgUrl: '/img/menu/tostadas.jpg',
+            imgAlt: 'Imagen de tostadas'
+        },
+        {
+            imgUrl: '/img/menu/waffles.jpg',
+            imgAlt: 'Imagen de waffle'
+        },
+        {
+            imgUrl: '/img/menu/wrap2.jpg',
+            imgAlt: 'Imagen de un burrito'
+        },
+        {
+            imgUrl: '/img/menu/ensaladas.jpg',
+            imgAlt: 'Imagen de ensalada'
+        },
+        {
+            imgUrl: '/img/menu/smooties.jpg',
+            imgAlt: 'Imagen de smothies'
+        },
+        {
+            imgUrl: '/img/menu/wrap.jpg',
+            imgAlt: 'Imagen de burrito'
+        },
+        {
+            imgUrl: '/img/menu/yogurt.jpg',
+            imgAlt: 'Imagen de yogurts'
+        },
+    ]);
+    useEffect(() => {
+        const temporizador = setInterval(() => {
+            setDinamicImages(images => {
+                const [first, ...all] = images;
+                return [...all, first];
+            });
+        }, 3000);
+        return () => clearInterval(temporizador);
+    }, []);
     return <>
         <Hero>
             <div className="container-images">
-                <img src="/img/menu/ensaladas2.jpg" alt="Imagen de plato" />
-                <img src="/img/menu/tostadas.jpg" alt="Imagen de plato" />
-                <img src="/img/menu/waffles.jpg" alt="Imagen de plato" className="desktopImg" />
-                <img src="/img/menu/wrap2.jpg" alt="Imagen de plato" />
+                {
+                    dynamicImages.slice(0, 4).map((element, index) => {
+                        return <img key={index} src={element.imgUrl} alt={element.imgAlt} className="desktopImg" />
+                    })
+                }
+
             </div>
             <div className="heroInfo">
                 <h3><span>Bendito verde:</span> donde lo saludable es irresistible</h3>
