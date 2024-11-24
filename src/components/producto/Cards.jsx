@@ -70,7 +70,7 @@ const Cards = ({items, setModalitem, setmodal}) => {
             <p>{items.precio}</p>
             <button onClick={()=>{
                 setModalitem(items);
-                setmodal(true);
+                setmodal(false);
             }}>Ver Más</button>
         </Content> 
     </Container>

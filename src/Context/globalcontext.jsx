@@ -237,7 +237,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "WAFFLES PROTEICOS",
                     "precio": "L 195.00",
                     "descripcion": "Waffles hechos a base de almendra con proteína acompañados de banano y arándanos o banano y fresas con crema de cacahuate bendito verde.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/productos/waffles.jpg"
                 },
                 {
                     "nombre": "PANQUEQUES DE AVENA Y BANANO",
