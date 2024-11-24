@@ -41,18 +41,49 @@ const Cabecera = styled.header`
         }
         input[type="checkbox"]{
             display: none;
-            &:checked ~ ul{
-                display: flex;
-            }
             @media (min-width: 720px) {
                 display: none;       
             }
         }
-        ul{
-            display: none;
+    }
+    .enivarbtn{ 
+        text-decoration: none;
+        display: none;
+        @media (min-width: 720px) {
+            display: block;
+        }
+        button{
+            padding: 8px;
+            border-radius: 10px;
+            @media (min-width: 720px) {
+                display: flex;
+                flex-flow: nowrap row;
+                align-items: center;
+                gap: 10px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            p{
+                @media (min-width: 720px) {
+                    display: none;
+                }
+                @media (min-width: 1024px) {
+                    display: block;  
+                    font-size: 25px;
+                    font-weight: 500; 
+                }
+            }
+        }
+    }
+`
+
+const Ul = styled.ul`
+            display: ${props => (props.show ? 'flex' : 'none')};
             flex-flow: column;
             background-color: #A9B58B;
-            position: absolute;
+            position: fixed;
             top: 106px;
             bottom: 0;
             left: 0;
@@ -90,45 +121,20 @@ const Cabecera = styled.header`
                     color: #fff;
                 }
             }
-        }
-    }
-    .enivarbtn{ 
-        text-decoration: none;
-        display: none;
-        @media (min-width: 720px) {
-            display: block;
-        }
-        button{
-            padding: 8px;
-            border-radius: 10px;
-            @media (min-width: 720px) {
-                display: flex;
-                flex-flow: nowrap row;
-                align-items: center;
-                gap: 10px;
-            }
-            img{
-                width: 30px;
-                height: 30px;
-            }
-            p{
-                @media (min-width: 720px) {
-                    display: none;
-                }
-                @media (min-width: 1024px) {
-                    display: block;  
-                    font-size: 25px;
-                    font-weight: 500; 
-                }
-            }
-        }
-    }
 `
+
 const Header = () => {
 
     const { navitems } = useContext(Context)
 
     const location = useLocation()
+
+    const [labelchk, setlabelchk] = useState(false);
+
+    useEffect(() => {
+      setlabelchk(false)
+    }, [location])
+    
 
     return <Cabecera>
         <div className="logo">
@@ -137,8 +143,8 @@ const Header = () => {
         </div>
         <div className="content">
             <label htmlFor="hamburger"><img src="/img/menu_hamburguesa.png" alt="hamburguesa" /></label>
-            <input type="checkbox" id="hamburger" />
-            <ul>
+            <input type="checkbox" id="hamburger" checked={labelchk} onChange={() => { setlabelchk(!labelchk)}} />
+            <Ul show={labelchk}>
                 {
                     navitems.map((item, index) => {
                         if (("/" + location.pathname.split("/")[1]) === item.url) {
@@ -152,7 +158,7 @@ const Header = () => {
                         }
                     })
                 }
-            </ul>
+            </Ul>
         </div>
         <Link className="enivarbtn" to={"/contactanos"}><button><img src="/img/send.svg" alt="Enviar" /><p>Envía</p></button></Link>
     </Cabecera>
