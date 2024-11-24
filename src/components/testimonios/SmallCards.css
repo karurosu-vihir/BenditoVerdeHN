@@ -8,7 +8,7 @@
 }
 
 .smallCardContainer .smallCard {
-    margin-top: 15px;
+    margin: 15px 0px; 
     padding: 10px;
     background-color: #9aa387ad;
     border-radius: 15%;
