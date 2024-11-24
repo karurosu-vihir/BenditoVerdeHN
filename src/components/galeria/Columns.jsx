@@ -19,8 +19,8 @@ const Columns = ({imagenes}) => {
     return <>
         <Col>
             {
-                imagenes.map((imagen)=>{
-                    return <ImgCard img={imagen.img} />
+                imagenes.map((imagen, index)=>{
+                    return <ImgCard key={index} img={imagen.img} />
                 })
             }
         </Col>

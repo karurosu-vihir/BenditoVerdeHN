@@ -130,6 +130,11 @@ const Header = () => {
 
     const [labelchk, setlabelchk] = useState(false);
 
+    useEffect(() => {
+      setlabelchk(false)
+    }, [location])
+    
+
     return <Cabecera>
         <div className="logo">
             <img src="/img/logo.svg" alt="logo" className="logo_circular" />

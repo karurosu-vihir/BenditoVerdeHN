@@ -6,13 +6,15 @@ import { Context } from "../../Context/globalcontext"
 const Pie = styled.footer`
     background-color: #9aa387;
     display: flex;
-    flex-flow: nowrap column;
+    flex-direction: column;
+    flex-wrap: nowrap;
     padding: 20px;
     position: relative;
     z-index: 1000;
     section{
         display: flex;
-        flex-flow: nowrap column;
+        flex-direction: column;
+        flex-wrap: nowrap;
         @media (min-width: 720px) {
             flex-direction: row;  
             justify-content: space-around; 
@@ -36,7 +38,8 @@ const Pie = styled.footer`
 
 const Maindiv = styled.div`
     display: flex;
-    flex-flow: nowrap column;
+    flex-direction: column;
+    flex-wrap: nowrap;
     div{
         display: flex;
         flex-direction: row;
@@ -71,7 +74,8 @@ const Maindiv = styled.div`
 `
 
 const UL = styled.ul`
-    flex-flow: ${props => ((props.flexflow === "row" )? 'row nowrap' : 'column nowrap')};
+    flex-direction: ${props => ((props.flexflow === "row" )? 'row' : 'column')};
+    flex-wrap: nowrap;
     gap: 10px;
     margin: 10px 0;
     padding: 0;
@@ -97,6 +101,8 @@ const UL = styled.ul`
 
 const Footer = () => {
 
+    const location = useLocation()
+
     const [labelchk, setlabelchk] = useState({
         label1: false,
         label2: false,
@@ -109,6 +115,14 @@ const Footer = () => {
           [label]: !prevState[label], // si estaba en false -> !false = true si estaba en true -> !true = false
         }));
       };
+
+      useEffect(() => {
+        setlabelchk({
+            label1: false,
+            label2: false,
+            label3: false,
+        });
+      }, [location])
 
     return <Pie>
         <section>

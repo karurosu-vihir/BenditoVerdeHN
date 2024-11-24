@@ -85,18 +85,18 @@ const Galeria = () => {
     return<>
         <Galery>
             {
-                columns.map((column)=>{
-                    return <Columns imagenes={column}/>
+                columns.map((column,index)=>{
+                    return <Columns key={index} imagenes={column}/>
                 })
             }
         </Galery>
         <Filtros>
             {
-                filters.map((filter)=>{
+                filters.map((filter, index)=>{
                     if(filter == filtros)
-                        return <BtnFlitro setfiltros={setfiltros} active={true} lbl={filter}/>
+                        return <BtnFlitro key={index} setfiltros={setfiltros} active={true} lbl={filter}/>
                     else
-                        return <BtnFlitro setfiltros={setfiltros} active={false} lbl={filter}/>
+                        return <BtnFlitro key={index} setfiltros={setfiltros} active={false} lbl={filter}/>
                 })
             }
         </Filtros>

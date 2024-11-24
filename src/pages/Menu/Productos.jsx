@@ -7,26 +7,28 @@ import Modal from "../../components/producto/Modal"
 
 const MainContainer = styled.section`
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background: url('/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
     h2{
         display: flex;
         justify-content: center;
         background-color: #FEFDF2;
         padding: 20px 0;
         text-align: center;
+        width: 100%;
         .titulo{
-            width: 90%;
             height: 70px;
         }
-    }
-    @media (min-width: 720px) {
-        width: 90%;
-        .titulo{
-            width: 70%;
+        @media (min-width: 720px) {
+            width: 90%;
         }
     }
 `
