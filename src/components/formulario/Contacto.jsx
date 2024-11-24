@@ -10,16 +10,19 @@ const EnvioContacto = styled.section`
   background-position: center;
 
   .HeroContenido {
-    margin-bottom: 20px;
+    align-items: center;
+    background-color: #FEFDF2;
+    border-radius: 10px;
 
     h1 {
-      font-size: 2rem;
-      margin-left: 110px;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-right: 70px;
+      font-size: 1.7rem;
+      color: #000;
+      margin-bottom: 10px;
     }
   }
 
@@ -29,6 +32,7 @@ const EnvioContacto = styled.section`
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
+    margin-top: 20px;
 
     img {
       width: 100%;
@@ -91,12 +95,12 @@ const EnvioContacto = styled.section`
 
       h1 {
         font-size: 1.8rem;
-        margin: 0;
+        margin-bottom: 5px;
       }
 
       p {
-        font-size: 1rem;
-        margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
       }
     }
 
@@ -105,18 +109,21 @@ const EnvioContacto = styled.section`
     }
 
     .formularioContacto {
-      gap: 10px;
-      padding: 15px;
+      max-width: 70%; /* Ajuste para pantallas medianas */
+      padding: 20px;
+      gap: 15px;
+      margin: 0 auto;
+      margin-top: 20px;
     }
 
     input,
     textarea {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     button {
-      font-size: 0.9rem;
-      padding: 8px;
+      font-size: 1rem;
+      padding: 10px;
     }
   }
 
@@ -130,12 +137,12 @@ const EnvioContacto = styled.section`
 
       h1 {
         font-size: 1.5rem;
-        margin: 0;
+        margin-bottom: 5px;
       }
 
       p {
-        font-size: 0.9rem;
-        margin: 0;
+        font-size: 1rem;
+        margin-bottom: 10px;
       }
     }
 
@@ -146,7 +153,8 @@ const EnvioContacto = styled.section`
     .formularioContacto {
       gap: 8px;
       padding: 10px;
-      margin-bottom: 0px;
+      max-width: 90%;
+      margin: 0 auto;
     }
 
     input,
@@ -161,26 +169,29 @@ const EnvioContacto = styled.section`
   }
 
   /* pantallas grandes */
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
     .HeroContenido {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 0 50px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
 
       h1 {
         font-size: 3rem;
+        margin-bottom: 5px;
       }
 
       p {
         font-size: 1.5rem;
-        margin-left: 20px;
+        margin-bottom: 10px;
       }
     }
 
     .HeroImagen {
       width: 100%;
-      aspect-ratio: 16 / 5;
+      aspect-ratio: 16 / 9;
       height: auto;
       margin: 20px auto;
     }
