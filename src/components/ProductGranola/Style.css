@@ -8,13 +8,13 @@
   flex-wrap: wrap; 
 }
 
-.image-container {
+.granola-item {
   position: relative;
   text-align: center;
   max-width: 300px;
 }
 
-.image-container img {
+.granola-item img {
   width: 100%;
   height: auto;
   border-radius: 15px;
@@ -37,13 +37,13 @@
   width: 240px;
 }
 
-/*  pantallas grandes  */
+/* Pantallas grandes */
 @media (min-width: 1200px) {
   .granola-component {
     max-width: 1200px;
     gap: 40px;
   }
-  .image-container img {
+  .granola-item img {
     max-width: 350px; 
   }
   .text-overlay {
@@ -52,15 +52,18 @@
   }
 }
 
-/*  pantallas medianas  */
+/* Pantallas medianas */
 @media (max-width: 1199px) and (min-width: 768px) {
   .granola-component {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
-  .image-container {
+  .granola-item {
     max-width: 280px;
+  }
+  .granola-item img {
+    max-width: 100%; 
   }
   .text-overlay {
     font-size: 15px;
@@ -68,35 +71,42 @@
   }
 }
 
-/*  pantallas pequeñas  */
+/* Pantallas pequeñas */
 @media (max-width: 767px) and (min-width: 480px) {
   .granola-component {
-    flex-direction: column; /* Los elementos se apilan verticalmente */
+    flex-direction: column; 
     align-items: center;
   }
-  .image-container {
-    max-width: 250px;
+  .granola-item {
+    max-width: 50%; 
+  }
+  .granola-item img {
+    max-width: 50%; 
   }
   .text-overlay {
-    font-size: 14px;
-    width: 200px;
-    max-width: 90%;
+    font-size: 20px;
+    width: 90%; 
+    max-width: 100%;
   }
 }
 
-/*  pantallas muy pequeñas  */
+/* Pantallas muy pequeñas */
 @media (max-width: 479px) {
   .granola-component {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-  .image-container {
-    max-width: 200px;
+  .granola-item {
+    max-width: 90%; 
+  }
+  .granola-item img {
+    max-width: 90%; 
   }
   .text-overlay {
     font-size: 12px;
-    width: 180px;
-    max-width: 90%;
+    width: 90%; 
+    max-width: 100%;
+    padding: 25px;
   }
 }
