@@ -4,6 +4,7 @@ import Horario from "../components/ubicacionHorarios/Horario";
 import styled from "styled-components";
 
 const Main = styled.main`
+  margin: 0;
   background: url("/img/fondo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
