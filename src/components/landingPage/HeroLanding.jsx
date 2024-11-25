@@ -125,7 +125,9 @@ const Hero = styled.section`
             grid-template-columns: 100%;
             grid-template-rows: 1fr;
             img{
-                object-position: top center;
+                height: 90vh;
+                object-fit: cover;
+                object-position: bottom center;
                 &:nth-child(even), &:nth-child(1){
                     display: none;
                 }
