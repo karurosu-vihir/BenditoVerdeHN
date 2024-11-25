@@ -4,13 +4,14 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px 0px;
 }
 
 .smallCardContainer .smallCard {
-    margin: 40px 10px 5px 10px; 
+    margin: 20px 10px 5px 10px; 
     padding: 10px;
     background-color: #9aa387ad;
-    border-radius: 15%;
+    border-radius: 10%;
     height: 340px;
     width: 260px;
 }

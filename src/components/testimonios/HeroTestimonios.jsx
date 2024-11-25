@@ -8,7 +8,7 @@ const HeroTestimonios = () => {
                 <div className="heroContent">
                     <h2>Clients Love</h2>
                     <p>
-                        "Thank you for building such an empowering tool, especially for designers! This site went from Figma to Framer in less than a week"
+                        "Lo que realmente destaca de Bendito Verde es la atención al detalle en el uso de ingredientes frescos y de alta calidad. Cada platillo está diseñado para ser nutritivo y, al mismo tiempo, reconfortante. "
                     </p>
 
                 </div>
