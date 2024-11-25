@@ -35,3 +35,16 @@
 .bgGreen{
     background-color: #9aa3878c;
 }
+
+
+@media (min-width: 720px) {
+    .LargeCard{
+        flex-direction: row;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width: 1024px) {
+
+}

@@ -14,7 +14,7 @@ const LargeCards = ()=>{
                         </p>
                     </div>
                 </div>
-                <div className="LargeCard">
+                <div className="LargeCard row-reverse">
                     <img src="https://picsum.photos/id/75/1024/720" alt="imagen de la carta"/>
                     <div className="CardContent bgWhite">
                         <h2>Cooperativa Cacil</h2>
