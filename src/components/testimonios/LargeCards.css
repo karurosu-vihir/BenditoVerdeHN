@@ -1,5 +1,6 @@
  .CardContainer{
     justify-content: center;
+    width: 100vw;
  }
 
 
@@ -7,6 +8,7 @@
     display: flex;
     flex-direction: column;
 }
+
 
 .CardContainer .LargeCard .CardContent{
     display: flex;
@@ -38,13 +40,15 @@
 
 
 @media (min-width: 720px) {
-    .LargeCard{
+    .CardContainer .LargeCard{
         flex-direction: row;
     }
-    .row-reverse {
+
+    .CardContainer .LargeCard .CardContent {
+        width: 100%;
+    }
+
+    .CardContainer .LargeCard.row-reverse {
         flex-direction: row-reverse;
     }
-}
-@media (min-width: 1024px) {
-
 }

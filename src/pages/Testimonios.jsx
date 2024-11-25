@@ -5,9 +5,10 @@ import { ContextProvider } from "../Context/testimonioscontext"
 
 const Testimonios = () => {
     return <>
+
+        <HeroTestimonios />
+        <LargeCards />
         <ContextProvider>
-            <HeroTestimonios />
-            <LargeCards />
             <SmallCards />
         </ContextProvider>
     </>

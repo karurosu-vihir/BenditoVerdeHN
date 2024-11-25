@@ -3,12 +3,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
 }
 
 .smallCardContainer .smallCard {
-    margin: 15px 0px; 
+    margin: 40px 10px 5px 10px; 
     padding: 10px;
     background-color: #9aa387ad;
     border-radius: 15%;
@@ -42,3 +41,4 @@
     margin-top:15px ;
     color: white;
 }
+
