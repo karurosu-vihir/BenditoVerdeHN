@@ -8,8 +8,7 @@ import Nosotros from "./pages/Nosotros"
 import NuestroEquipo from "./pages/NuestroEquipo"
 import Testimonios from "./pages/Testimonios"
 import Ubicacion from "./pages/Ubicacion"
-import ProductosUnicos from "./pages/Menu/ProductosUnicos"
-import Tostadas from "./pages/Menu/Tostadas"
+import Productos from "./pages/Menu/Productos"
 import Page404 from "./pages/Page404"
 
 
@@ -27,8 +26,7 @@ function App() {
             <Route path="/ubicacion" element={<Ubicacion/>}></Route>
             <Route path="/nuestroequipo" element={<NuestroEquipo/>}></Route>
             <Route path="/galeria" element={<Galeria/>}></Route>
-            <Route path="/menu/productounico" element={<ProductosUnicos/>}></Route>
-            <Route path="/menu/tostadas" element={<Tostadas/>}></Route>
+            <Route path="/menu/:categoria" element={<Productos/>}></Route>
             <Route path="*" element={<Page404/>}></Route>
           </Route>
         </Routes>
