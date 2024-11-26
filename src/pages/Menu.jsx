@@ -5,11 +5,15 @@ import { useContext } from "react"
 
 
 const Container = styled.section`
-    margin: 50px 0;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, 326px);
     justify-content: center;
     gap: 30px;
+    background: url('/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 `
 
 const Menu = () => {
