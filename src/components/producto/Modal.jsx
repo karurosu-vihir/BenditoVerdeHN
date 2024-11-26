@@ -1,23 +1,54 @@
-import styled from "styled-components"
+import React, { useState } from "react";
+import "./CardBasecss.css";
 
-const Container = styled.div`
-    background-color: #9ba387;
-    height: 300px;
-    position: absolute;
-    width: 300px;
-    top: 0;
-`
-// Lineas sagradas(no toques): 10, 11, 12, 18, 19, 20, 22
-// de la 17 solo ocupas el evento onclick y lo que lleva adentro
-// Lo demas cambialo a tu gusto
-const Modal = ({items, setmodal}) => {
-    return <>
-   <Container>
-        <h3>{items.nombre}</h3>
-        <p>{items.descripcion}</p> 
-        <button onClick={()=>{setmodal(false)}}>cerrar</button>      
-        </Container>
-    </>
-}
+const Modal = ({ items, setmodal }) => {
+  const [showDetails, setShowDetails] = useState(false); 
 
-export default Modal
+  return (
+    <div className="modal-overlay">
+      <div className="card-container">
+        <button className="close-button" onClick={() => setmodal(false)}>
+          X
+        </button>
+
+        {!showDetails ? (
+          
+          <>
+            <img
+              src={items.img}
+              alt={items.nombre}
+              style={{
+                width: "100%",
+                height: "500px", 
+                objectFit: "cover",
+                borderRadius: "16px",
+              }}
+            />
+            <button
+              className="navigate-button"
+              onClick={() => setShowDetails(true)}
+            >
+              Detalles
+            </button>
+          </>
+        ) : (
+          
+          <>
+            <div className="text">
+              <h3 className="modal-title">{items.nombre}</h3>
+              <p>{items.descripcion}</p>
+            </div>
+            <button
+              className="navigate-button"
+              onClick={() => setShowDetails(false)}
+            >
+              Regresar
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Modal;
