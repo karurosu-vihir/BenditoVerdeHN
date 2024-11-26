@@ -27,12 +27,16 @@ export const ContextProvider = ({ children }) => {
     {
         Comidas: [
             { img: '/img/productos/ohcherry.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' }
+            { img: '/img/galeria/Galeria1_comida.jpg' },
+            { img: '/img/galeria/Galeria2_comida.jpg' },
+            { img: '/img/galeria/Galeria3_Comida.jpg' },
+            { img: '/img/galeria/Galeria4_comida.jpg' },
+            { img: '/img/galeria/Galeria5_comida.jpg' },
+            { img: '/img/galeria/Galeria6_comida.jpg' },
+            { img: '/img/galeria/Galeria7_comida.jpg' },
+            { img: '/img/galeria/Galeria8_comida.jpg' },
+            { img: '/img/galeria/Galeria9_comida.jpg' },
+            { img: '/img/menu/bebidas.jpg' },
         ],
         Personas: [
             { img: 'https://picsum.photos/id/64/367/267' },
