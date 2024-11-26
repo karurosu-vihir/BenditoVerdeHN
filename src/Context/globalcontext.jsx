@@ -39,22 +39,27 @@ export const ContextProvider = ({ children }) => {
             { img: '/img/menu/bebidas.jpg' },
         ],
         Personas: [
-            { img: 'https://picsum.photos/id/64/367/267' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' }
+            { img: 'https://placehold.co/776x922' },
+            { img: 'https://placehold.co/374x755' },
+            { img: 'https://placehold.co/701x503' },
+            { img: 'https://placehold.co/966x798' },
+            { img: 'https://placehold.co/488x976' },
+            { img: 'https://placehold.co/970x1030' },
+            { img: 'https://placehold.co/585x451' },
+            { img: '/img/galeria/Galeria1_personas.JPG' },
         ],
         Lugares: [
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' }
+            { img: '/img/galeria/Galeria1_lugares.JPG' },
+            {"img": "https://placehold.co/1015x635"},
+            {"img": "https://placehold.co/879x1074"},
+            {"img": "https://placehold.co/1011x955"},
+            {"img": "https://placehold.co/536x714"},
+            {"img": "https://placehold.co/1161x350"},
+            {"img": "https://placehold.co/353x433"},
+            {"img": "https://placehold.co/814x1009"},
+            {"img": "https://placehold.co/1040x1113"},
+            {"img": "https://placehold.co/667x1176"},
+            {"img": "https://placehold.co/733x497"}
         ]
     }
 
