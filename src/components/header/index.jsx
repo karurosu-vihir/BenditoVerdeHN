@@ -5,7 +5,7 @@ import { Context } from "../../Context/globalcontext"
 
 const Cabecera = styled.header`
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
     right: 0;
     left: 0;
     top: 0;
