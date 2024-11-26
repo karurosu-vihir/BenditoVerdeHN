@@ -14,7 +14,8 @@ const Cabecera = styled.header`
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;  
+    z-index: 1000;  
     .logo{
         display: flex;
         flex-flow: nowrap row;
