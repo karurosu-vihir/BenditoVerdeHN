@@ -1,0 +1,111 @@
+.horarioContainer {
+  background-color: #9aa387;
+  width: 850px;
+  height: 450px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 3%;
+  overflow: hidden;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+
+.card {
+  margin: 15% 0px 15% 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    font-size: 11px; 
+    text-align: left; 
+    border-bottom: 1px solid #ffffff; 
+    padding: 5px 10px; 
+    box-sizing: border-box; 
+    color: #ffffff;
+  }
+  
+  .card li strong {
+    margin-left: auto; 
+    font-weight: bold; 
+  }
+  
+
+.card h1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 75px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btnContainer button {
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fff;
+  color: #9aa387;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .card h1 {
+    writing-mode: horizontal-tb; 
+    transform: none; 
+    font-size: 50px;
+    width: 520px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .card li {
+    font-size: 20px;
+    padding-left: 25px;
+  }
+
+  .btnContainer button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 720px) {
+  .card h1 {
+    padding-right: 30px;
+  }
+}
