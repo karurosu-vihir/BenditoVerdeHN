@@ -1,7 +1,11 @@
+import Contacto from "../components/formulario/Contacto";
+
 const Contactanos = () => {
-    return<>
+  return (
+    <div>
+      <Contacto />
+    </div>
+  );
+};
 
-    </>
-}
-
-export default Contactanos
+export default Contactanos;
