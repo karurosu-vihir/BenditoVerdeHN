@@ -10,6 +10,9 @@ import Testimonios from "./pages/Testimonios"
 import Ubicacion from "./pages/Ubicacion"
 import Productos from "./pages/Menu/Productos"
 import Page404 from "./pages/Page404"
+import NuestrosProductos from "./pages/NuestrosProductos"
+
+
 
 
 function App() {
@@ -26,6 +29,7 @@ function App() {
             <Route path="/ubicacion" element={<Ubicacion/>}></Route>
             <Route path="/nuestroequipo" element={<NuestroEquipo/>}></Route>
             <Route path="/galeria" element={<Galeria/>}></Route>
+            <Route path="/nuestrosproductos" element={<NuestrosProductos/>}></Route>
             <Route path="/menu/:categoria" element={<Productos/>}></Route>
             <Route path="*" element={<Page404/>}></Route>
           </Route>
