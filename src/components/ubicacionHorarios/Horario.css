@@ -109,3 +109,9 @@
     padding-right: 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  .btnContainer button {
+    margin-bottom: 50px;
+  }
+}
