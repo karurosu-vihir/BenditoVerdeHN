@@ -238,6 +238,17 @@ const Contacto = () => {
     setMinDate(formattedDate);
   }, []);
 
+  // Función para formatear la fecha
+  const formatearFecha = (fecha) => {
+    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const fechaObj = new Date(fecha);
+    const fechaFormateada = fechaObj.toLocaleDateString('es-ES', opciones);
+    
+    const hora = fechaObj.getHours();
+    const minutos = String(fechaObj.getMinutes()).padStart(2, '0');
+    return `${fechaFormateada} a las ${hora}:${minutos}`;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -247,10 +258,11 @@ const Contacto = () => {
     e.preventDefault();
 
     const telefonoWhatsApp = "50488181635";
-    const fecha = form.fecha.split("T")[0];
-    const hora = form.fecha.split("T")[1];
-
-    const mensaje = `Hola, soy ${form.nombre}. Mi número de teléfono es ${form.telefono}. Quisiera una reservación para ${form.personas} personas para el día ${fecha} a las ${hora}.`;
+    const fechaFormateada = formatearFecha(form.fecha);  // Formatear la fecha y hora
+    const mensaje = `Hola, soy ${form.nombre}. Mi número de teléfono es ${form.telefono}. 
+Quisiera hacer una reservación para ${form.personas} personas para el día ${fechaFormateada}. 
+Además, me gustaría realizar el siguiente pedido: ${form.pedido}. 
+Gracias por su atención.`;
 
     const mensajeCodificado = encodeURIComponent(mensaje);
     const url = `https://api.whatsapp.com/send?phone=${telefonoWhatsApp}&text=${mensajeCodificado}`;

@@ -100,15 +100,25 @@ const AboutSection = styled.section`
 
     .mision,
     .vision {
-      background-color: #dce3ce;
+      background-color: #FEFDF2;
       padding: 15px;
       border-radius: 10px;
       max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
 
       h3 {
         font-size: 1.5rem;
         color: #4a4a4a;
         margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
       }
 
       p {
@@ -116,6 +126,19 @@ const AboutSection = styled.section`
         color: #555;
         line-height: 1.5;
       }
+
+      .icono {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .vision {
+      background-color: #dce3ce;
     }
   }
 
@@ -224,6 +247,7 @@ const AboutSection = styled.section`
   }
 `;
 
+
 const About = () => {
   return (
     <AboutSection>
@@ -253,14 +277,18 @@ const About = () => {
       </div>
       <div className="importante">
         <div className="mision">
-          <h3>Misión</h3>
+          <h3>
+            <img src="/img/mission.png" alt="Icono Misión" className="icono" /> Misión
+          </h3>
           <p>
             Ofrecer una experiencia gastronómica fresca, delicada y saludable, donde cada plato se prepare con
             ingredientes naturales y de la mejor calidad.
           </p>
         </div>
         <div className="vision">
-          <h3>Visión</h3>
+          <h3>
+            <img src="/img/vision.png" alt="Icono Visión" className="icono" /> Visión
+          </h3>
           <p>
             Aspiramos a ser el lugar donde comer saludable sea sinónimo de disfrutar, ofreciendo opciones frescas y
             sabrosas para todos, sin importar su estilo de vida.
@@ -272,3 +300,6 @@ const About = () => {
 };
 
 export default About;
+
+
+
