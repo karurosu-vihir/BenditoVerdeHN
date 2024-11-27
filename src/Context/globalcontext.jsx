@@ -71,7 +71,7 @@ export const ContextProvider = ({ children }) => {
                 "nombre": "BENDITO VERDE",
                 "precio": "L 130.00",
                 "descripcion": "Manzana verde, espinaca, apio, pepino, jengibre & limón. Alcalinizador, oxigenante, depurativo y detoxificador.",
-                "img":"https://placehold.co/600x400"
+                "img":"/img/productos/bendito.jpg"
             },
             {
                 "nombre": "CIELITO LINDO",
@@ -83,7 +83,7 @@ export const ContextProvider = ({ children }) => {
                 "nombre": "AM",
                 "precio": "L 130.00",
                 "descripcion": "Piña, jengibre, apio, pepino & limón. Diurético natural, hidratante, protector y energético.",
-                "img":"https://placehold.co/600x400"
+                "img":"/img/productos/AM.jpg"
             },
             {
                 "nombre": "RAMBO JUNGLE",
@@ -168,7 +168,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "OVERNIGHT OATS",
                     "precio": "L 105.00",
                     "descripcion": "Avena trasnochada con leche de almendras, yogurt griego, chia y toppings.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/productos/oats.jpg"
                 },
                 {
                     "nombre": "CHÍA PUDDING",
