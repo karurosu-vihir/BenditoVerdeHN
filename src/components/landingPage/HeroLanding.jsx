@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 const Hero = styled.section`
-    display; grid;
+    display: grid;
     width: 100%;
     height: auto;
     z-index: 15;
@@ -33,6 +33,7 @@ const Hero = styled.section`
         width: 300px;
         height: auto;
         color: #fff;
+        overflow-y: hidden;
         h3{
             text-transform: uppercase;
             line-height: 1.7;
