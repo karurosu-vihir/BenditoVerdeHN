@@ -81,6 +81,17 @@
   text-align: center;
 }
 
+@media (min-width: 450px) {
+  .card h1{
+    padding-left: 30px;
+  }
+  
+  .card li {
+    font-size: 17px;
+    padding-left: 30px;
+  }
+}
+
 @media (min-width: 720px) {
   .card h1 {
     writing-mode: horizontal-tb; 
@@ -90,6 +101,7 @@
     padding: 0;
     padding-left: 10px;
     margin: 0;
+    padding-right: 30px;
   }
 
   .card li {
@@ -104,11 +116,6 @@
   }
 }
 
-@media (min-width: 720px) {
-  .card h1 {
-    padding-right: 30px;
-  }
-}
 
 @media (min-width: 1024px) {
   .btnContainer button {
