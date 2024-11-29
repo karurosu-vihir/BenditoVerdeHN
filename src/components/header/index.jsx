@@ -138,10 +138,10 @@ const Header = () => {
     
 
     return <Cabecera>
-        <div className="logo">
+        <Link to={"/"} className="logo">
             <img src="/img/logo.svg" alt="logo" className="logo_circular" />
             <img src="/img/titulo-big.svg" alt="Bendito Verde" className="logo_titulo" />
-        </div>
+        </Link>
         <div className="content">
             <label htmlFor="hamburger"><img src="/img/menu_hamburguesa.png" alt="hamburguesa" /></label>
             <input type="checkbox" id="hamburger" checked={labelchk} onChange={() => { setlabelchk(!labelchk)}} />
