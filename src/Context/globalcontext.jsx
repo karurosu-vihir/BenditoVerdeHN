@@ -39,27 +39,27 @@ export const ContextProvider = ({ children }) => {
             { img: '/img/menu/bebidas.jpg' },
         ],
         Personas: [
-            { img: 'https://placehold.co/776x922' },
-            { img: 'https://placehold.co/374x755' },
-            { img: 'https://placehold.co/701x503' },
-            { img: 'https://placehold.co/966x798' },
-            { img: 'https://placehold.co/488x976' },
-            { img: 'https://placehold.co/970x1030' },
-            { img: 'https://placehold.co/585x451' },
+            { img: '/img/galeria/placeholder_600px.jpg' },
+            { img: '/img/galeria/placeholder_300px.jpg' },
+            { img: '/img/galeria/placeholder_600px.jpg' },
+            { img: '/img/galeria/placeholder_600px.jpg' },
+            { img: '/img/galeria/placeholder_400px.jpg' },
+            { img: '/img/galeria/placeholder_600px.jpg' },
+            { img: '/img/galeria/placeholder_400px.jpg' },
             { img: '/img/galeria/Galeria1_personas.JPG' },
         ],
         Lugares: [
             { img: '/img/galeria/Galeria1_lugares.JPG' },
-            {"img": "https://placehold.co/1015x635"},
-            {"img": "https://placehold.co/879x1074"},
-            {"img": "https://placehold.co/1011x955"},
-            {"img": "https://placehold.co/536x714"},
-            {"img": "https://placehold.co/1161x350"},
-            {"img": "https://placehold.co/353x433"},
-            {"img": "https://placehold.co/814x1009"},
-            {"img": "https://placehold.co/1040x1113"},
-            {"img": "https://placehold.co/667x1176"},
-            {"img": "https://placehold.co/733x497"}
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_300px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_300px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"}
         ]
     }
 
@@ -107,25 +107,25 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "BERRY HAPPY",
                     "precio": "L 175.00",
                     "descripcion": "Leche de coco, proteína sabor vainilla, fresas, arándanos y miel de abeja.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "VOLCANIC GLOW",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla, arándanos, banano, espinaca y crema de cacahuate.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "BANANA SPLIT",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla o chocolate, banano, crema de cacahuate, bendito verde, dátil y canela.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "PIÑA COLADA",
                     "precio": "L 160.00",
                     "descripcion": "Leche de coco, piña, proteína sabor vainilla y coco rallado.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 }
             ]
         },
@@ -149,7 +149,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "HUMMUS",
                     "precio": "PRONTO",
                     "descripcion": "Pan de masa madre, hummus, champiñones y tomate cherry rostizado.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "OH CHERRY",
@@ -174,7 +174,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "CHÍA PUDDING",
                     "precio": "L 95.00",
                     "descripcion": "Elaborado a base de leche de almendras y semillas de chia acompañado de frutas de temporada y tu topping favorito.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "MYKONOS YOGURT",
