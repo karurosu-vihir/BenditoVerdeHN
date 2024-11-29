@@ -37,6 +37,7 @@ export const ContextProvider = ({ children }) => {
             { img: '/img/galeria/Galeria8_comida.jpg' },
             { img: '/img/galeria/Galeria9_comida.jpg' },
             { img: '/img/menu/bebidas.jpg' },
+            { img: '/img/galeria/Galeria10_comida.jpg' },
         ],
         Personas: [
             { img: '/img/galeria/placeholder_600px.jpg' },
