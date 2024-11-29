@@ -21,14 +21,14 @@ const ContainerCards = styled.section`
         align-items: center;
         justify-content: center;
         gap: 20px;
-        
+
         .card{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 300px;
             height: auto;
-
+            margin: 0;
             img{
                 width: 100%;
                 height: 300px;
@@ -43,7 +43,6 @@ const ContainerCards = styled.section`
             a{
                 display: block;
                 padding: 2px 8px;
-                margin-bottom: 30px; 
                 text-decoration: none;
                 color: #9AA387;
             }
