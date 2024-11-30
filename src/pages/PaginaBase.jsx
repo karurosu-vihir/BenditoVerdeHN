@@ -6,9 +6,7 @@ import { ContextProvider } from "../Context/globalcontext"
 import Loader from "../components/loader"
 
 const Main = styled.main`
-    @media (max-width: 760px) {
-        padding-bottom: 128px;
-    }
+
 `
 
 const PaginaBase = () => {
