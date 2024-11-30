@@ -49,12 +49,10 @@ const Loader=()=>{
     useEffect(()=>{
         setVisible("flex");
         setOpacidad(1);
-        //setTransicion("opacity 1.5s ease-in-out");
         const timeout1 = setTimeout(() => {
             setOpacidad(0);
             const timeout2 = setTimeout(() => {
               setVisible("none");
-              setTransicion("none");
             }, 1500);
             return () => clearTimeout(timeout2);
           }, 1500);
