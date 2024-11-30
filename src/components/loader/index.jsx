@@ -12,6 +12,7 @@ const Carga = styled.header`
     align-items: center;
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
+    transition: opacity 2s ease-in-out;
 }
 
 .cargando img{
@@ -40,23 +41,15 @@ const Carga = styled.header`
 }
 `
 const Loader=()=>{
-    //const [location,setLocation]=useState(null);
     const [visible,setVisible]=useState("flex");
     const [opacidad,setOpacidad]=useState(1);
-    const [transicion,setTransicion]=useState("opacity 2s ease-in-out");
     const location = useLocation();
 
 
     useEffect(()=>{
         setVisible("flex");
         setOpacidad(1);
-        setTransicion("opacity 1.5s ease-in-out");
-        console.log(location.pathname);
-        console.log("???");
-        
-    },[location]);
-
-    useEffect(()=>{
+        //setTransicion("opacity 1.5s ease-in-out");
         const timeout1 = setTimeout(() => {
             setOpacidad(0);
             const timeout2 = setTimeout(() => {
@@ -67,12 +60,11 @@ const Loader=()=>{
           }, 1500);
       
           return () => clearTimeout(timeout1);
-    },[transicion]);
-
+    },[location]);
     
     return(<Carga>
         <aside>
-            <div class="cargando" style={{display:visible,opacity:opacidad,transition:transicion}}>
+            <div class="cargando" style={{display:visible,opacity:opacidad}}>
                 <img src="/img/leaves.svg" alt="Cargando" />
                 <img src="/img/logo.svg" alt="" />
             </div>

@@ -148,7 +148,7 @@ const Footer = () => {
                     <li><Link to="/testimonios">Testimonios</Link></li>
                     <li><Link to="/contactanos">Contáctanos</Link></li>
                     <li><Link to="/nuestroequipo">Nuestro Equipo</Link></li>
-                    <li><Link to="/galeria">Galeria de Imagenes</Link></li>
+                    <li><Link to="/galeria">Galería de Imágenes</Link></li>
                 </UL>
             </Maindiv>
             <Maindiv>
