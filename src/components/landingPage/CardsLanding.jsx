@@ -68,12 +68,10 @@ const CardsLanding = () => {
         {
             name: 'Wrap Sano Pecado',
             imgURL: 'img/menu/wrap2.jpg',
-            link: '/menu'
         },
         {
             name: 'Avo Toast',
             imgURL: 'img/menu/tostadas.jpg',
-            link: '/menu'
         },
     ];
     return <>
@@ -85,7 +83,6 @@ const CardsLanding = () => {
                         return <div key={index} className="card">
                             <img src={elemento.imgURL} alt={elemento.name} />
                             <p>{elemento.name}</p>
-                            <a href={elemento.link}>Ver detalle</a>
                         </div>
                     })
                 }

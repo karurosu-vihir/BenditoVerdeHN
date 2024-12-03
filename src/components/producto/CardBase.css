@@ -15,7 +15,7 @@
   width: 450px;
   height: 600px;
   border-radius: 16px;
-  background-color: #c3c4b4;
+  background-color: #A9B58B;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +75,27 @@
 .text p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: #fff;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .modal-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #555;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .text p{
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .text p{
+    font-size: 1.2rem;
+  }
 }

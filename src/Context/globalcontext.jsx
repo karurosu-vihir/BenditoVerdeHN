@@ -27,30 +27,51 @@ export const ContextProvider = ({ children }) => {
     {
         Comidas: [
             { img: '/img/productos/ohcherry.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' },
-            { img: '/img/menu/ensaladas.jpg' }
+            { img: '/img/galeria/Galeria1_comida.jpg' },
+            { img: '/img/galeria/Galeria2_comida.jpg' },
+            { img: '/img/galeria/Galeria3_Comida.jpg' },
+            { img: '/img/galeria/Galeria4_comida.jpg' },
+            { img: '/img/galeria/Galeria5_comida.jpg' },
+            { img: '/img/galeria/Galeria6_comida.jpg' },
+            { img: '/img/galeria/Galeria7_comida.jpg' },
+            { img: '/img/galeria/Galeria8_comida.jpg' },
+            { img: '/img/galeria/Galeria9_comida.jpg' },
+            { img: '/img/galeria/Galeria10_comida.jpg' },
+            { img: '/img/galeria/Galeria11_comida.jpg' },
+            { img: '/img/galeria/Galeria12_comida.jpg' },
+            { img: '/img/galeria/Galeria13_comida.jpg' },
+            { img: '/img/galeria/Galeria14_comida.jpg' },
+            { img: '/img/galeria/Galeria15_comida.jpg' },
+            { img: '/img/galeria/Galeria16_comida.jpg' },
+            { img: '/img/galeria/Galeria17_comida.jpg' },
+            { img: '/img/galeria/Galeria18_comida.jpg' },
+            { img: '/img/galeria/Galeria19_comida.jpg' },
+            { img: '/img/galeria/Galeria20_comida.jpg' },
+            { img: '/img/menu/bebidas.jpg' },
+            { img: '/img/galeria/Galeria10_comida.jpg' },
         ],
         Personas: [
-            { img: 'https://picsum.photos/id/64/367/267' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' },
-            { img: '/img/menu/bebidas.jpg' }
+            { img: '/img/galeria/Galeria2_personas.jpg' },
+            { img: '/img/galeria/placeholder_300px.jpg' },
+            { img: '/img/galeria/Galeria3_personas.jpg' },
+            { img: '/img/galeria/placeholder_600px.jpg' },
+            { img: '/img/galeria/placeholder_400px.jpg' },
+            { img: '/img/galeria/Galeria4_personas.jpg' },
+            { img: '/img/galeria/placeholder_400px.jpg' },
+            { img: '/img/galeria/Galeria1_personas.JPG' },
         ],
         Lugares: [
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' },
-            { img: '/img/menu/tostadas.jpg' }
+            { img: '/img/galeria/Galeria1_lugares.JPG' },
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_300px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_300px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_600px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"},
+            {"img": "/img/galeria/placeholder_400px.jpg"}
         ]
     }
 
@@ -62,7 +83,7 @@ export const ContextProvider = ({ children }) => {
                 "nombre": "BENDITO VERDE",
                 "precio": "L 130.00",
                 "descripcion": "Manzana verde, espinaca, apio, pepino, jengibre & limón. Alcalinizador, oxigenante, depurativo y detoxificador.",
-                "img":"https://placehold.co/600x400"
+                "img":"/img/productos/bendito.jpg"
             },
             {
                 "nombre": "CIELITO LINDO",
@@ -74,7 +95,7 @@ export const ContextProvider = ({ children }) => {
                 "nombre": "AM",
                 "precio": "L 130.00",
                 "descripcion": "Piña, jengibre, apio, pepino & limón. Diurético natural, hidratante, protector y energético.",
-                "img":"https://placehold.co/600x400"
+                "img":"/img/productos/AM.jpg"
             },
             {
                 "nombre": "RAMBO JUNGLE",
@@ -98,25 +119,25 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "BERRY HAPPY",
                     "precio": "L 175.00",
                     "descripcion": "Leche de coco, proteína sabor vainilla, fresas, arándanos y miel de abeja.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "VOLCANIC GLOW",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla, arándanos, banano, espinaca y crema de cacahuate.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "BANANA SPLIT",
                     "precio": "L 170.00",
                     "descripcion": "Leche de almendra sin azúcar, proteína sabor vainilla o chocolate, banano, crema de cacahuate, bendito verde, dátil y canela.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "PIÑA COLADA",
                     "precio": "L 160.00",
                     "descripcion": "Leche de coco, piña, proteína sabor vainilla y coco rallado.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 }
             ]
         },
@@ -140,7 +161,7 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "HUMMUS",
                     "precio": "PRONTO",
                     "descripcion": "Pan de masa madre, hummus, champiñones y tomate cherry rostizado.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "OH CHERRY",
@@ -159,13 +180,13 @@ export const ContextProvider = ({ children }) => {
                     "nombre": "OVERNIGHT OATS",
                     "precio": "L 105.00",
                     "descripcion": "Avena trasnochada con leche de almendras, yogurt griego, chia y toppings.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/productos/oats.jpg"
                 },
                 {
                     "nombre": "CHÍA PUDDING",
                     "precio": "L 95.00",
                     "descripcion": "Elaborado a base de leche de almendras y semillas de chia acompañado de frutas de temporada y tu topping favorito.",
-                    "img":"https://placehold.co/600x400"
+                    "img":"/img/galeria/placeholder_600px.jpg"
                 },
                 {
                     "nombre": "MYKONOS YOGURT",

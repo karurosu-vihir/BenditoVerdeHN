@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CardBasecss.css";
+import "./CardBase.css";
 
 const Modal = ({ items, setmodal }) => {
   return (

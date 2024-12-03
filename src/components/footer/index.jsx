@@ -48,6 +48,10 @@ const Maindiv = styled.div`
         font-size: 21px;
         text-align: left;
         margin: 10px 0;
+        display: none;
+        @media (min-width: 720px) {
+            display: block;
+            }
         @media (min-width: 1024px) {
             font-size: 28px;    
             }
@@ -60,8 +64,9 @@ const Maindiv = styled.div`
         }
         label{
             align-self: center;
-            font-size: 21px;
+            font-size: 20px;
             color: #fff;
+            font-weight: bold;
             cursor: pointer;
             &::after{
                 content: '>';
@@ -130,19 +135,20 @@ const Footer = () => {
                 <div>
                     <h2>QUIENES SOMOS</h2>
                     <input type="checkbox" id="check" checked={labelchk.label1} onChange={()=>{toggle('label1')}}/>
-                        <label className="footer-dropdown" htmlFor="check"></label>
+                        <label className="footer-dropdown" htmlFor="check">QUIENES SOMOS </label>
                 </div>
                 <UL show={labelchk.label1} flexflow={"column"}>
                     <li><Link to="/nosotros">Nosotros</Link></li>
                     <li><Link to="/ubicacion">Ubicación</Link></li>
                     <li><Link to="/ubicacion">Horarios</Link></li>
+                    <li><Link to="/nuestrosproductos">Nuestros Productos</Link></li>
                 </UL>
             </Maindiv>
             <Maindiv>
                 <div>
                     <h2>ACERCA DE NOSOTROS</h2>
                     <input type="checkbox" id="check1" checked={labelchk.label2} onChange={()=>{toggle('label2')}}/>
-                        <label className="footer-dropdown" htmlFor="check1"></label>
+                        <label className="footer-dropdown" htmlFor="check1">ACERCA DE NOSOTROS </label>
                 </div>
                 <UL show={labelchk.label2} flexflow={"column"}>
                     <li><Link to="/testimonios">Testimonios</Link></li>
@@ -155,7 +161,7 @@ const Footer = () => {
                 <div>
                     <h2>REDES SOCIALES</h2>
                     <input type="checkbox" id="check2" checked={labelchk.label3} onChange={()=>{toggle('label3')}}/>
-                        <label className="footer-dropdown" htmlFor="check2"></label>
+                        <label className="footer-dropdown" htmlFor="check2">REDES SOCIALES </label>
                 </div>
                 <UL show={(labelchk.label3)} flexflow={"row"}>
                     <li><Link to="https://www.facebook.com/" target="_blank"><img src="/img/facebook.svg" alt="facebook"/></Link></li>

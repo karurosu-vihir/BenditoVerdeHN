@@ -40,10 +40,11 @@ const ContainerGallery = styled.section`
         top: 97%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: 8px 0px;
     }  
     @media (min-width: 1024px){
         .btnGaleria{
-            top: 92%;
+            top: 94%;
         }
     }
 `;

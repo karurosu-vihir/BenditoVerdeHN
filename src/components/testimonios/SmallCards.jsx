@@ -16,7 +16,7 @@ const SmallCards = () => {
                                     <img src={`${item.imgSrc}`} alt="client picture" />
                                     <div>
                                         <h3>{item.name}</h3>
-                                        <p>@username</p>
+                                        <p>{item.username}</p>
                                     </div>
                                 </div>
 
