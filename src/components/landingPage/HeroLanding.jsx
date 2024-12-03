@@ -146,8 +146,9 @@ const Hero = styled.section`
                 font-size: 1.6rem;
                 width: 350px;
                 top: 14%;
-                left: 3%    
-            }
+                left: 3%;    
+                text-align: left;
+                }
             .hero-content{
                 display: none;
             }
@@ -161,6 +162,7 @@ const Hero = styled.section`
                 font-size: 1.6rem;
                 text-transform: uppercase;
                 line-height: 1.7;
+                text-align: right;
             }  
             a{
                 width: 250px;
