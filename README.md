@@ -1,24 +1,12 @@
-## Proyecto Final de la Formacion de React
-# Autor: Carlos E. Vijil
-
-# Anotaciones:
-El proyecto esta hecho con json server por lo cual no lo puedo desplegar en una pagina, si se quisiera usar hacer:
+## Equipo Bendito Verde
+# Integrantes
 <ul>
-  <li>npm i</li>
-  <li>npm i json-server</li>
-  <li>npx json-server --watch db.json</li>
+  <li>0318200501248 Josue Anibal Leon Alvarado realeoncito</li>
+  <li>1623200200287 Jorge Mauricio Tinoco Pacheco Tinoco06</li>
+  <li>0801200506290 Erick André Irías Rodríguez Erick112358</li>
+  <li>0801200212622 Carlos Eduardo Vijil Maldonado  karurosu-vihir</li>
+  <li>0801200419038 Denis Benjamín Chávez Aguilera  DenisChavez</li>
+  <li>0801200403695 Cinthya Lizeth Landa Ferrufino LizVenus07</li>
+  <li>0801200406445 Guillermo Javier Agurcia Avila GUILLE-AV</li>
 </ul>
 
-Y en otra Terminal:
-<ul>
-  <li>npm run dev</li>
-</ul>
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
